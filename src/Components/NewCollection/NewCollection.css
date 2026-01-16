@@ -1,0 +1,33 @@
+.new-collections {
+    padding: 80px 7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+}
+
+.section-header h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.section-header p {
+    color: #475569;
+    font-size: 16px;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 26px;
+}
+
+
+
