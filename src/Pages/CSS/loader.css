@@ -1,0 +1,82 @@
+.app-container {
+  position: relative;
+}
+
+/* Blur Effect */
+.content.blur {
+  filter: blur(18px);
+  transition: filter 0.5s ease;
+}
+
+.content.clear {
+  filter: blur(0);
+  transition: filter 0.5s ease;
+}
+
+/* Loader Overlay */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1.4s ease forwards;
+}
+
+/* Glasses Animation */
+.glasses {
+  display: flex;
+  align-items: center;
+  animation: zoomIn 0.9s ease;
+}
+
+.lens {
+  width: 450px;
+  height: 400px;
+  border: 10px solid #000000;
+  border-radius: 300px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.bridge {
+  width: 20px;
+  height: 5px;
+  background: #000;
+  margin: 0 5px;
+}
+.left-handle{
+     width: 200px;
+  height: 5px;
+  background: #000;
+  margin: 0 5px;
+}
+.right-handle{
+width: 200px;
+  height: 5px;
+  background: #000;
+  margin: 0 5px;
+}
+
+/* Animations */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(4.5);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
